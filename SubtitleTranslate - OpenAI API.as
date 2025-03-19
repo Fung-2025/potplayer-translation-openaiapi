@@ -1,6 +1,7 @@
 /*
 	real time subtitle translate for PotPlayer using OpenAI API
-	https://platform.openai.com/docs/api-reference
+	GitHub: https://github.com/Fung-2025/potplayer-translation-openaiapi
+	OpenAI API Docs: https://platform.openai.com/docs/api-reference
 */
 
 // void OnInitialize()
@@ -264,7 +265,7 @@ string Translate(string Text, string &in SrcLang, string &in DstLang)
 	Post += "\"temperature\":0.5,";
 	Post += "\"top_p\":0.9,";
 	Post += "\"max_tokens\":1024,";
-	Post += "\"do_sample\":false}";
+	// Post += "\"do_sample\":false}";
 	
 	// 发送请求
 	string ret = "";
