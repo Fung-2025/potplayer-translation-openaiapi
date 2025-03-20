@@ -264,8 +264,8 @@ string Translate(string Text, string &in SrcLang, string &in DstLang)
 	Post += "{\"role\":\"user\",\"content\":\"" + prompt + escapedText + "\"}],";
 	Post += "\"temperature\":0.5,";
 	Post += "\"top_p\":0.9,";
-	Post += "\"max_tokens\":1024,";
-	Post += "\"do_sample\":false}";
+	Post += "\"max_tokens\":1024}";
+	// Post += "\"do_sample\":false}";
 	
 	// 发送请求
 	string ret = "";
